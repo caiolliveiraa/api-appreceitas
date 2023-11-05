@@ -61,7 +61,7 @@ app.get("/usuarios", async (req, res) => {
 })
 
 app.delete("/usuarios/:id", async(req, res) =>{
-    const usuario = await Usuarios.findByIdAndRemove(req.params.id)
+    const usuario = await Usuarios.findByIdAndDelete(req.params.id)
     return res.send(usuario)
 })
 
@@ -87,3 +87,4 @@ app.post("/usuarios", async (req, res) => {
     await usuario.save()
     return res.send(usuario)
 })
+
