@@ -4,7 +4,8 @@
   "description": "api-receitas",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "vercel-build": "npx prisma migrate deploy"
   },
   "keywords": [],
   "author": "",
